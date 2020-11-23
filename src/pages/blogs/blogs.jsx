@@ -14,15 +14,14 @@ import img3 from '../../img/innov_1.jpg'
 const Blogs = () => {
 
     const cardData = [
-        {sana: 7564, img: img1, title: 'Цифровая трансформация для госслужащих началась по всей стране', avtor:'Admin', kSoni: 2001, to:'/blogs/12', },
-        {sana: 7564, img: img2, title: 'Цифровая трансформация для госслужащих началась по всей стране', avtor:'Admin', kSoni: 2001, to:'/blogs/12', },
-        {sana: 7564, img: img3, title: 'Цифровая трансформация для госслужащих началась по всей стране', avtor:'Admin', kSoni: 2001, to:'/blogs/12', },
-        
-    ]
+        {_id:1, img: img1, title: 'Цифровая трансформация для госслужащих', avtor:'Admin', seenCount: Math.floor(Math.random() * 99), to:'/blogs/12',createdAt:new Date().toLocaleString(),description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dicta doloremque excepturi exercitationem iusto modi, pariatur saepe suscipit vel veritatis!'},
+        {_id:2, img: img2, title: 'Цифровая трансформация для госслужащих', avtor:'Admin', seenCount: Math.floor(Math.random() * 99), to:'/blogs/12',createdAt:new Date().toLocaleString(),description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dicta doloremque excepturi exercitationem iusto modi, pariatur saepe suscipit vel veritatis!'},
+        {_id:3, img: img1, title: 'Цифровая трансформация для госслужащих', avtor:'Admin', seenCount: Math.floor(Math.random() * 99), to:'/blogs/12',createdAt:new Date().toLocaleString(),description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dicta doloremque excepturi exercitationem iusto modi, pariatur saepe suscipit vel veritatis!'},
+    ];
 
-    const cards = cardData.map((i, index) => (
-        <BlogCard img={i.img} title={i.title} sana={i.sana} avtor={i.avtor} kSoni={i.kSoni} to={i.to} key={index} />
-    ))
+    // const cards = cardData.map((i, index) => (
+    //     <BlogCard datum={...i} key={index} />
+    // ))
 
     return (
         <div className={cx(st.blogs)}>
@@ -33,8 +32,11 @@ const Blogs = () => {
                 </div>
                 <h1 className={cx('home_blog_title')}>рубрика</h1>
                 <div className={cx('row')}>
-                    {cards}
-                    {cards}
+                    {
+                        cardData.map((item,index)=><BlogCard key={index} {...item}/>)
+                    }
+                    {/*{cards}*/}
+                    {/*{console.log(cards)}*/}
                 </div>
                 <Partner />
             </div>

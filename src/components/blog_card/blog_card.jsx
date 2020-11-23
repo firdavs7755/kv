@@ -5,39 +5,40 @@ import { Link } from 'react-router-dom'
 import {  connect } from 'react-redux';
 import parse from 'react-html-parser';
 
-const BlogCard = (props) => {
-    const { data } = props;
-    const { lang ,type } = props.lang;
+function BlogCard ({_id,img,title,createdAt,avtor,description,seenCount,to}){
+    // const { data } = props;
+    // const { lang ,type } = props.lang;
 
     return (
         <div className={cx('blogCard')}>    
             <div className={st.card}>
                 <div className={cx(st.card_header)}>
-                    <img src={`http://umdsoft.uz${data.image}`} alt="" className={cx(st.card_img,'img-fluid w-100 h-100')}/>
+                    {console.log(title)}
+                    <img src={img} alt="" className={cx(st.card_img,'img-fluid')}/>
                 </div>
                 <div className={cx(st.card_title)}>
-                    <Link to={`/blog/experts/${data._id}`} className={cx(st.card_title_link)}>{data.title[type]}</Link>
+                    <Link to={`/blog/experts/${_id}`} className={cx(st.card_title_link)}>{title}</Link>
                     <div className={cx(st.content)}>
                         <span className={cx(st.content_span)}>
-                            <span className={cx(st.avtor)}> {lang.author} :</span> Admin
+                            <span className={cx(st.avtor)}> </span> {avtor}
                         </span>
                         <span className={cx(st.content_span)}>
-                            {data.createdAt.slice(0,10)}
+                            {createdAt}
                         </span>
                         <span className={cx(st.content_span)}>
                             <i className={cx('fas fa-eye', st.eye)}></i>
-                            {data.views}
+                            {seenCount}
                         </span>
                     </div>
                 </div>
                 <div className={cx(st.text)}>
                     <p className={cx(st.text_p)}>
-                        {parse(data.description[type])}
+                        {parse(description)}
                     </p>
                 </div>
                 <div>
-                    <Link to={`/blog/experts/${data._id}`} className={cx(st.link)}>
-                        { lang.reedMore }
+                    <Link to={`/blogs/${_id}`} className={cx(st.link)}>
+                        Ko'proq
                     </Link>
                 </div>
             </div>

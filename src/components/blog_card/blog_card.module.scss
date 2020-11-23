@@ -8,6 +8,10 @@
     transition:all .3s;
     margin:1rem 5px;
 
+    &_img{
+        object-fit: cover;
+    }
+
     *{
         -moz-user-select: none;
         -webkit-user-select: none;

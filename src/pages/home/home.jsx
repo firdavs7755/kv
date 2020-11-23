@@ -62,15 +62,17 @@ render() {
         )
     }else{
         return (
-            <div className="home">
+            <div>
                 <Premier data={this.state.data.slider}/>
                 {/* <SignIn /> */}
-                <Hot data={this.state.data.hot}/>
-                <Ekspert data={this.state.data.experts}/>
-                <Reyting/>
-                <Aksiya data={this.state.data.experts}/>
-                <Hit/>
-                <Popular/>
+                <div className="home p-5 m-5">
+                    <Hot data={this.state.data.hot}/>
+                    <Ekspert data={this.state.data.experts}/>
+                    <Reyting/>
+                    <Aksiya data={this.state.data.experts}/>
+                    <Hit/>
+                    <Popular/>
+                </div>
             </div>      
         );
     }
