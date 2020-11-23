@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f2bdb801-b518-4728-8d41-f2138b7947ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/entercode/entercode.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/entercode/entercode.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/resetpassword/reset.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/resetpassword/reset.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/resetpassword/reset.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/resetpassword/reset.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sign-up/personal/personal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-up/personal/personal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/authService.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,6 +23,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -48,6 +50,10 @@
       <workItem from="1605854697427" duration="421000" />
       <workItem from="1605863150209" duration="17471000" />
       <workItem from="1605945587215" duration="5361000" />
+      <workItem from="1605954527485" duration="6412000" />
+      <workItem from="1606043830150" duration="6259000" />
+      <workItem from="1606053884176" duration="11674000" />
+      <workItem from="1606113062734" duration="2422000" />
     </task>
     <servers />
   </component>

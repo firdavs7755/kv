@@ -33,9 +33,8 @@ function Reset(){
             console.log(res.data);
             setRequest({ error : false, success:true,process : false})
             cookie.set('phone',phone,{ path : '/entercode' });
-            // console.log(cookie.get('phone'))
-            },
-            err => {
+            //console.log(cookie.get('phone'))
+            }, err => {
                 console.log(err);
                 setRequest({ error : true , success : false , process : false })
             })
@@ -46,7 +45,7 @@ function Reset(){
         authApi.sendResetCodeAndPhone({phone : phone,code:code })
             .then( res => {
                     console.log(res.data.success);
-                    setRequest({ error : false, success : true , process : false})
+                    // setRequest({ error : false, success : true , process : false})
                     setSuccess(res.data.success)
                     cookie.set('phone',phone,{ path : '/entercode' });
                     // console.log(cookie.get('phone'))
@@ -58,7 +57,8 @@ function Reset(){
                     console.log(err);
                     setRequest({ error : true , success : false , process : false })
                 })
-    }
+    };
+
     return(
         <div className="my-5">
             <div className="container">
@@ -82,12 +82,11 @@ function Reset(){
                             </div>
                         </div>
                     }
-
                     {
                         request.error && 
                         <div className="alert alert-danger mx-0 mx-sm-4">
                             <i className="fa fa-fw fa-exclamation-triangle"></i>&nbsp;
-                            Пользователь введенного номера не зарегистрирован
+                            Kiritilgan raqam foydalanuvchisi ro'yxatdan o'tmagan
                         </div>
                     }
                     {
@@ -122,7 +121,7 @@ function Reset(){
                                            type="text" className="form-control"/>
                                     <button type="submit" className={"btn btn-success"}>send</button>
                                 </form>
-                                <h6 style={{"display":kodXato?"block":"none",color:"red"}}>Berilgan kod xato</h6>
+                                <h6 style={{"display":kodXato?"block":"none",color:"red"}}>Quyidagi kod xato</h6>
                             </div>
                         </div>
                     </div>
