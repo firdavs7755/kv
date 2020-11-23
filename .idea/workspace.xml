@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f2bdb801-b518-4728-8d41-f2138b7947ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog_card/blog_card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog_card/blog_card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog_card/blog_card.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog_card/blog_card.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/blogs/blogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blogs/blogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +51,7 @@
       <workItem from="1605954527485" duration="6412000" />
       <workItem from="1606043830150" duration="6259000" />
       <workItem from="1606053884176" duration="11674000" />
-      <workItem from="1606113062734" duration="11165000" />
+      <workItem from="1606113062734" duration="11961000" />
     </task>
     <servers />
   </component>
