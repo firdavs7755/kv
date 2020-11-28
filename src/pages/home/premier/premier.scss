@@ -64,12 +64,12 @@
 
         &:last-of-type{
             right: 0px;
-            background: linear-gradient(135deg,transparent 30%,#4E7DF1);
+            background: transparent;
         }
 
         &:first-of-type{
             left: 0px;
-            background: linear-gradient(135deg, #4E7DF1 , transparent 70%);
+            background: transparent;
         }
     }
 }

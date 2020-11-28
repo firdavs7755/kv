@@ -3,8 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="f2bdb801-b518-4728-8d41-f2138b7947ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blog_card/blog_card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog_card/blog_card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blog_card/blog_card.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog_card/blog_card.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/median/median.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/median/median.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/navbar/navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/navbar/navbar.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/blogs/blogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blogs/blogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/aksiya/aksiya.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/aksiya/aksiya.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/ekspert/ekspert.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/ekspert/ekspert.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/ekspert/ekspert.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/ekspert/ekspert.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/hit/hit.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/hit/hit.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/popular/popular.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/popular/popular.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/premier/premier.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/premier/premier.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/reyting/reyting.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/reyting/reyting.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profil/profil.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profil/profil.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/categoryReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/categoryReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +34,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../JSP/bc/bc_lesson8_2" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -51,7 +67,10 @@
       <workItem from="1605954527485" duration="6412000" />
       <workItem from="1606043830150" duration="6259000" />
       <workItem from="1606053884176" duration="11674000" />
-      <workItem from="1606113062734" duration="11961000" />
+      <workItem from="1606113062734" duration="26375000" />
+      <workItem from="1606150102540" duration="2707000" />
+      <workItem from="1606202119960" duration="5915000" />
+      <workItem from="1606209194212" duration="325000" />
     </task>
     <servers />
   </component>

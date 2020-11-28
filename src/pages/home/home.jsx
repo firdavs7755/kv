@@ -65,7 +65,7 @@ render() {
             <div>
                 <Premier data={this.state.data.slider}/>
                 {/* <SignIn /> */}
-                <div className="home p-5 m-5">
+                <div className="home">
                     <Hot data={this.state.data.hot}/>
                     <Ekspert data={this.state.data.experts}/>
                     <Reyting/>

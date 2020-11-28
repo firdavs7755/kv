@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 
 const Ekspert = (props) => {
     
-    const [cardData,setCardData] = useState(props.data)
+    const [cardData,setCardData] = useState(props.data);
 
     return (
         <div className={cx(st.ekspert)}>

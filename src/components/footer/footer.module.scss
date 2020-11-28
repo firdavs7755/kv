@@ -32,7 +32,7 @@
 .col{
     display:flex;
     flex-direction: column;
-    
+
 
     &_h1{
         color:#ffffff;
@@ -50,7 +50,7 @@
 
         &:hover{
             text-decoration:none;
-            color:#FEDB4D;
+            color: #fff;
         }
     }
 
@@ -69,7 +69,7 @@
     display:flex;
     flex-direction: column;
     margin-top:2rem;
-    
+
     .box{
         display:flex;
         align-items: center;
@@ -105,12 +105,12 @@
         font-size:1.2rem;
         margin-top:1.5rem;
         font-weight:500;
-        
+
 
         &:hover{
             text-decoration:none;
             color:#ffffff;
-            
+
             .location_icon{
                 color:#ffffff;
             }
@@ -149,7 +149,7 @@
         font-weight:600;
         color:#ffffff;
         margin-bottom:0;
-        
+
     }
 
     &_p{
@@ -179,23 +179,24 @@
             box-shadow:none;
             box-shadow:inset 0px -3px 0px #28a745;
         }
-        
+
         &:focus:invalid{
             box-shadow:inset 0px -3px 0px #FEDB4D;
-            
+
         }
 
         &::placeholder{
             color:rgba(0,0,0,.4);
-            
+
         }
     }
 
     &_podpis{
         padding:1rem 1.5rem;
         display:inline-block;
-        background:#FEDB4D;
-        color:black;
+        background: #4E7DF1;
+        border: 1px solid #fff;
+        color:#fff;
         font-size:1.3rem;
         font-weight:540;
 

@@ -5,41 +5,41 @@ import { Link } from 'react-router-dom'
 import {  connect } from 'react-redux';
 import parse from 'react-html-parser';
 
-function BlogCard ({_id,img,title,createdAt,avtor,description,seenCount,to}){
-    // const { data } = props;
-    // const { lang ,type } = props.lang;
+const BlogCard = (props) => {
+    console.log(props);
+    const { data } = props;
+    const { lang ,type } = props.lang;
 
     return (
         <div className={cx('blogCard')}>    
             <div className={st.card}>
                 <div className={cx(st.card_header)}>
-                    {console.log(title)}
-                    <img src={img} alt="" className={cx(st.card_img,'img-fluid')}/>
+                    <img src={`http://umdsoft.uz${data.image}`} alt="" className={cx(st.card_img,' w-100 h-100')}/>
                 </div>
                 <div className={cx(st.card_title)}>
-                    <Link to={`/blog/experts/${_id}`} className={cx(st.card_title_link)}>{title}</Link>
+                    <Link to={`/blog/experts/${data._id}`} className={cx(st.card_title_link)}>{data.title[type]}</Link>
                     <div className={cx(st.content)}>
                         <span className={cx(st.content_span)}>
-                            <span className={cx(st.avtor)}> </span> {avtor}
+                            <span className={cx(st.avtor)}> {lang.author} :</span> Admin
                         </span>
                         <span className={cx(st.content_span)}>
-                            {createdAt}
+                            {data.createdAt.slice(0,10)}
                         </span>
                         <span className={cx(st.content_span)}>
                             <i className={cx('fas fa-eye', st.eye)}></i>
-                            {seenCount}
+                            {data.views}
                         </span>
                     </div>
                 </div>
                 <div className={cx(st.text)}>
                     <p className={cx(st.text_p)}>
-                        {parse(description)}
+                        {parse(data.description[type])}
                     </p>
                 </div>
                 <div>
-                    <Link to={`/blogs/${_id}`} className={cx(st.link)}>
-                        Ko'proq
-                    </Link>
+                    <Link to={`/blogs/${data._id}`} className={cx(st.link)}>
+                    {lang.reedMore}
+                </Link>
                 </div>
             </div>
         </div>
@@ -47,6 +47,10 @@ function BlogCard ({_id,img,title,createdAt,avtor,description,seenCount,to}){
     );
 }
 
-const mstp = state => (state);
+const mstp = state => {
+    return {
+        lang: state.lang
+    }
+};
 
 export default connect(mstp,null)(BlogCard);
