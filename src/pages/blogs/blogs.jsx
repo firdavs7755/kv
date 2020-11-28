@@ -2,16 +2,11 @@ import React, {useEffect, useState} from 'react'
 import st from './blogs.module.scss'
 import cx from 'classnames'
 import BlogSidebar from './blogSidebar/blogSidebar';
-
 import { BlogCard, Partner } from '../../components';
-
 import radius from '../../img/radius2.jpg'
-import img1 from '../../img/industry_2.jpg'
-import img2 from '../../img/industry_1.jpg'
-import img3 from '../../img/innov_1.jpg'
 import Axios from "axios";
 import {baseUrl} from "../../api/api";
-import Slider from "react-slick";
+import {Col, Row} from "reactstrap";
 
 
 const Blogs = () => {
@@ -44,32 +39,43 @@ const Blogs = () => {
 
     return (
         <div className={cx(st.blogs)}>
-            <div className={cx('container')}>
-                <BlogSidebar/>
-                <div className={cx(st.box)}>
-                    <img src={radius} alt="" className={cx(st.box_img)}/>
-                </div>
-                <h1 className={cx('home_blog_title')}>sarlavha</h1>
-                <div className={cx('row')}>
-                    {
-                        data.hot.map((i,index)=>{
-                            return(
+        <div className={cx('container')}>
+            <BlogSidebar/>
+            <div className={cx(st.box)}>
+                <img src={radius} alt="" className={cx(st.box_img)}/>
+            </div>
+            <h1 className={cx('home_blog_title')}>sarlavha</h1>
+            <Row md={12}>
+                {
+                    data.hot.map((i, index) => {
+                        return (
+                            <Col md={3}sm={12} xs={12}>
                                 <BlogCard data={i} key={i._id}/>
-                            )
-                        })
-                    }
+                            </Col>
+                        )
+                    })
+                }
+            </Row>
+            <Row md={12} sm={12} xs={12}>
                     {
                         data.experts.map((i,index)=>{
                             return(
-                                <BlogCard data={i} key={i._id}/>
+                                <Col md={3} sm={12} xs={12}>
+                                    <BlogCard data={i} key={i._id}/>
+                                </Col>
                             )
                         })
                     }
-                </div>
-                <Partner />
-            </div>
+            </Row>
+            {/*<div className={cx('row')}>*/}
+            {/*   <div className={cx('col')}>*/}
+            {/*      */}
+            {/*   </div>*/}
+            {/*</div>*/}
+            <Partner />
         </div>
-    );
+    </div>
+    )
 }
 
 export default Blogs;

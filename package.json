@@ -37,6 +37,7 @@
     "react-spinners-kit": "^1.9.1",
     "react-wow": "^1.0.0",
     "react-yandex-maps": "^4.4.0",
+    "reactstrap": "^8.7.1",
     "redux": "^4.0.5",
     "sass-loader": "^10.0.1",
     "slick-carousel": "^1.8.1",

@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f2bdb801-b518-4728-8d41-f2138b7947ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blogs/blogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blogs/blogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +59,9 @@
       <workItem from="1606202119960" duration="5915000" />
       <workItem from="1606209194212" duration="325000" />
       <workItem from="1606546986141" duration="752000" />
+      <workItem from="1606548355134" duration="1044000" />
+      <workItem from="1606549455855" duration="1995000" />
+      <workItem from="1606551662903" duration="826000" />
     </task>
     <servers />
   </component>
